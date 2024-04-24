@@ -1,0 +1,34 @@
+												A music festival is a gathering where various 
+												musicians and bands come together to perform 
+												live music for an audience. These events can 
+												span over a few days and often feature multiple 
+												stages with different genres of music playing 
+												simultaneously. Festivals offer a diverse range 
+												of musical acts, from mainstream pop and rock to 
+												indie, electronic, jazz, and more niche genres. 
+												Attendees typically purchase tickets to gain 
+												access to the festival grounds, where they can 
+												enjoy performances, food, and various activities. 
+
+												<nav class="nav">
+										<ul class="nav__list">
+												<li class="nav__item">
+														<a href="/index.html">Home</a>
+												</li>
+												<li class="nav__item">
+														<a href="/html/sounds.html">Sounds</a>
+												</li>
+												<li class="nav__item">
+														<a href="/html/studio.html">Studio</a>
+												</li>
+												<li class="nav__item">
+														<a href="/html/about.html">About</a>
+												</li>
+												<li class="nav__item">
+														<a href="/html/pricing.html">Pricing</a>
+												</li>
+												<li class="nav__item">
+														<a href="/html/contactus.html">Contact Us</a>
+												</li>
+										</ul>
+								</nav>

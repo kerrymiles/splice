@@ -56,6 +56,7 @@ body {
 }
 .wrapper__container>h2 {
 	margin-left: 100px;
+	margin-top: 10px;
 }
 .wrapper__container {
 	color: #e3e3e3;
@@ -68,10 +69,23 @@ body {
 	height: 100px;
 	background-color: #e3e3e3;
 	border-radius: 30px;
+	justify-content: space-between;
+	padding-left: 100px;
+	padding-right: 20px;
 }
 .right-part-music {
 	height: inherit;
 	align-items: center;
 	justify-content: center;
 	display: flex;
+}
+.buttonBase {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 25%;
+}
+.fcont {
+	margin-top: 50px;
 }
