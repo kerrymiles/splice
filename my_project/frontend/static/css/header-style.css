@@ -1,0 +1,86 @@
+body {
+	background-color: #222;
+	font-family: var(--font-family);
+}
+
+.header_container {
+	width: 100%;
+	display: flex;
+	background-color: #222;
+	justify-content: space-between;
+	align-items: center;
+	height: 75px;
+}
+#left {
+	height: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo {
+	margin-left: 40px;
+}
+.nav {
+	padding-left: 30px;
+}
+.nav__item {
+	padding-left: 30px;
+}
+.nav__list, #left, .reg {
+	display: flex;
+}
+.nav__link {
+	font-family: var(--font-family-SemiBold);
+	font-size: 16px;
+	color: #e3e3e3;
+	flex-shrink: 7;
+}
+.sign-block {
+	background-color: #e3e3e3;
+	border-radius: 30px;
+	margin-right: 75px;
+	width: 115px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.login {
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-right: 20px;
+}
+.login:hover {
+	border: 2px #e3e3e3 solid;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 30px;
+}
+.reg__btn {
+	font-family: var(--font-family-SemiBold);
+}
+.sign-font {
+	color: black;
+}
+.login-font {
+	color: #e3e3e3;
+}
+.nav__link {
+	padding-bottom: 2px;
+}
+.header__nav-hover:hover {
+	border-bottom: 2px solid #e3e3e3;
+}
+.nav__link:hover ~ .sounds__list.sounds__list{
+	display: block;
+}
+
+.sign-block:hover > .sign-font, .sign-block:hover {
+	background-color: var(--bg-tiles);
+	color: #e3e3e3;
+}
+.sign-block:hover {
+	border: #e3e3e3 2px solid;
+}

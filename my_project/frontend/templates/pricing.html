@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Spline</title>
+	<link rel="stylesheet" href="{{ url_for('static', path='/css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', path='/css/header-style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', path='/css/footer-style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', path='/css/gr-pricing.css') }}">
+	<link rel="shortcut icon" href="{{ url_for('static', path='/assets/img/favicon.ico') }}" type="image/x-icon">
+
+	<style>
+		@font-face {
+			font-family: 'Manrope-SemiBold';
+			src: url("{{ url_for('static', path='/fonts/Manrope-SemiBold.ttf') }}");
+		}
+
+		@font-face {
+			font-family: 'Manrope';
+			src: url("{{ url_for('static', path='/fonts/Manrope-Regular.ttf') }}"); 
+		}
+
+		@font-face {
+			font-family: 'Manrope-Bold';
+			src: url("{{ url_for('static', path='/fonts/Manrope-Bold.ttf') }}");
+		}
+
+		.use-sample-library {    
+			background-image: url("{{ url_for('static', path='/assets/img/main/bg_main-top.jpg') }}");
+			background-size: cover;
+			height: calc(100vh - 75px);
+		}
+
+		.try-spline__final-slide {
+			background-image: url("{{ url_for('static', path='/assets/img/main/try-splice-today.jpg') }}");
+			background-size: cover;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header_container">
+			<div id="left" class="header_navigation">
+				<div class="logo">
+					<a href="{{ url_for('render', name='index') }}">
+						<img src="{{ url_for('static', path='/assets/img/logo_img.svg') }}" alt="Splice">
+					</a>
+				</div>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='sounds') }}">
+								Sounds
+							</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='studio') }}">Studio</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='about') }}">About</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='pricing') }}">Pricing</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='contactus') }}">Contact Us</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="right" class="header_registration">
+				<ul class="reg">
+					<li class="reg__item login">
+						<a href="#" class="reg__btn login-font">Login</a>
+					</li>
+					<li class="reg__item sign-block">
+						<a href="#" class="reg__btn sign-font">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<hr style="margin-top: 25px;">
+
+	<main class="main__container">
+		<h1>Pricing</h1>
+		<article class="pricing">
+			<section class="beginner_plan plans">
+				<h3>Beginner plan</h3>
+				<article class="advantages">
+					<p class="advantage">Access to the Core Library</p>
+					<p class="advantage">Studio time</p>
+					<p class="advantage">Online Workshops</p>
+				</article>
+				<p class="price pab">FREE</p>
+				<form class="add_to_cart" action="/en/cart/add/" method="POST">
+					<input class="btn buy-button--beginner" type="submit" value="Buy now">
+				</form>
+			</section>
+			<section class="standard_plan plans">
+				<h3>Standard plan</h3>
+				<article class="advantages">
+					<p class="advantage">Access to the entire music library</p>
+					<p class="advantage">Studio time</p>
+					<p class="advantage">Personalized Sessions</p>
+				</article>
+				<p class="price pab">24.200$ / month</p>
+				<form class="add_to_cart" action="/en/cart/add/" method="POST">
+					<input class="btn buy-button--standard" type="submit" value="Buy now">
+				</form>
+			</section>
+			<section class="advanced_plan plans">
+				<h3>Advanced plan</h3>
+				<article class="advantages">
+					<p class="advantage">Exclusive access to new releases</p>
+					<p class="advantage">Unlimited studio time</p>
+					<p class="advantage">Individual consultations</p>
+					<p class="advantage">Special offers</p>
+				</article>
+				<p class="discont pab">281.500$ / month</p>
+				<p class="price pab">56.300$ / month</p>
+				<form class="add_to_cart" action="/en/cart/add/" method="POST">
+					<input class="btn buy-button--advanced" type="submit" value="Buy now">
+				</form>
+			</section>
+		</article>
+	</main>
+
+	<hr style="margin-top: 50px; margin-bottom: 50px">
+	<footer>
+		<section class="my_up_divisors">
+			<hr class="divider" style="margin-top: 0px;">
+			<hr class="divider" style="height: 2px;">
+			<hr class="divider" style="height: 3px;">
+			<hr class="divider" style="height: 5px;">
+			<hr class="divider" style="height: 7px;">
+			<hr class="divider" style="height: 9px;">
+			<hr class="divider" style="height: 12px;">
+			<hr class="divider" style="height: 14px;">
+			<hr class="divider" style="height: 17px;">
+			<hr class="divider" style="height: 21px;">
+			<hr class="divider" style="height: 24px;">
+			<hr class="divider" style="height: 26px;">
+		</section>
+		<section class="middle-panel">
+			<section class="left-divisors">
+				<hr class="extern_divider" style="margin-top: 0px;">
+				<hr class="extern_divider" style="height: 2px;">
+				<hr class="extern_divider" style="height: 3px;">
+				<hr class="extern_divider" style="height: 5px;">
+				<hr class="extern_divider" style="height: 7px;">
+				<hr class="extern_divider" style="height: 9px;">
+				<hr class="extern_divider" style="height: 12px;">
+				<hr class="extern_divider" style="height: 14px;">
+				<hr class="extern_divider" style="height: 17px;">
+				<hr class="extern_divider" style="height: 21px;">
+				<hr class="extern_divider" style="height: 24px;">
+				<hr class="extern_divider" style="height: 26px;">
+			</section>
+			<section class="footer__navbar-menu community__footer">
+				<section class="footer-navbar">
+					<h2 class="headline__footer-name __title_section">Community</h2>
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item mt15"><a href="#" class="footer-ref footer__hover-nav">Ableton Live Projects</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">FL Studio Projects</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Logic Pro X Projects</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Garageband Projects</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Remix Contests</a></li>
+					</ul>
+				</section>
+			</section>
+			<section class="footer__navbar-menu sounds__footer">
+				<section class="footer-navbar">
+					<h2 class="headline__footer-name __title_section">Sounds</h2>
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item mt15"><a href="#" class="footer-ref footer__hover-nav">Features</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Catalog</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">How Jauz Uses Sounds</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">deadmau5's Chimaera</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">KSHMR Vol. 2</a></li>
+					</ul>
+				</section>
+			</section>
+			<section class="footer__navbar-menu plugins__footer">
+				<section class="footer-navbar">
+					<h2 class="headline__footer-name __title_section">Plugins</h2>
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item mt15"><a href="#" class="footer-ref footer__hover-nav">Top VSTs</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Serum</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Rent to Own</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Free Plugins</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Top Manufacturers</a></li>
+					</ul>
+				</section>
+			</section>
+			<section class="footer__navbar-menu beatmaker__footer">
+				<h2 class="headline__footer-name __title_section">Beatmaker</h2>
+				<section class="footer-navbar">
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item mt15"><a href="#" class="footer-ref footer__hover-nav">Create Your Beat</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Wakapella</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Just Blaze</a></li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</footer>
+</body>
+</html>

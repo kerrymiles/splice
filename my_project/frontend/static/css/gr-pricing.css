@@ -1,0 +1,81 @@
+h1 {
+    font-size: 48px;
+    color: #e3e3e3;
+    margin-left: 100px;
+    margin-top: 80px;
+    letter-spacing: 1.52mm;
+}
+.pricing {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 100px;
+    justify-content: space-between;
+}
+.plans {
+    background-color: #e3e3e3;
+    width: 380px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.plans > h3 {
+    color: #000000;
+    font-size: 32px;
+    letter-spacing: 0.52mm;
+    display: flex;
+    margin-left: 40px;
+    width: 100%;
+    margin-top: 65px;
+}
+.plans:hover {
+    filter: brightness(75%);
+}
+
+.advantages {
+    margin-top: 15px;
+}
+.advantage {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #222;
+}
+.add_to_cart {
+    width: 80%;
+}
+.btn {
+    width: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 50px;
+    font-size: 24px;
+    position: relative;
+    bottom: -180px;
+    background-color: #222;
+    color: #e3e3e3;
+    border-radius: 5px;
+}
+.btn:hover {
+    color: #222;
+    background-color: #e3e3e3;
+    border: #222 5px solid;
+
+}
+.buy-button--advanced {
+    bottom: -145px;
+}
+.pab {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 350px;
+}
+.discont {
+    margin-top: 325px;
+    text-decoration: line-through;
+}
+.price {
+    font-size: 28px;
+}

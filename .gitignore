@@ -1,0 +1,7 @@
+/tests
+app.log
+/myproject/backend/__pycashe__
+/myproject/backend/models/__pycashe__
+/myproject/backend/my_parser/__pycashe__
+/my_project/frontend/static/dist
+/node_modules

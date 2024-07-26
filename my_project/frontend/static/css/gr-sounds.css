@@ -1,0 +1,130 @@
+body {overflow-x: hidden;}
+.wrapper__container>h1 {
+	color: #e3e3e3;
+	letter-spacing: 0.7mm;
+	margin-left: 100px;
+	margin-top: 30px;
+	font-size: 3em;
+}
+.wrapper__container>h2 {
+	margin-left: 100px;
+	margin-top: 10px;
+}
+.wrapper__container {
+	color: #e3e3e3;
+}
+.music {
+	color: #222;
+	width: calc(100svw - 200px);
+	margin-left: 100px;
+	display: flex;
+	height: 100px;
+	background-color: #e3e3e3;
+	border-radius: 15px;
+	justify-content: space-between;
+	padding-left: 100px;
+	padding-right: 20px;
+}
+.right-part-music {
+	height: inherit;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.download {
+	margin-right: 25px;
+	width: 100px;
+	height: 50px;
+	border: 1px #222 solid;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #e3e3e3;
+}
+.download:hover {
+	filter: opacity(0.6);
+}
+.fcont {
+	margin-top: 50px;
+}
+.music {
+	margin-top: 20px;
+}
+
+.sort {
+	display: flex;
+	margin-left: 100px;
+	gap: 10px;
+	.sort-btn {
+		background-color: #e3e3e3;
+		color: #222;
+		width: 150px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 24px;
+		border-right: #999 6px solid;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+}
+
+.play_controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	width: 75px;
+	height: inherit;
+	margin-right: 15px;
+}
+.triangle-play {
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid #222;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	transform: rotate(90deg);
+}
+.two-line-play {
+	width: 25px;
+	height: 35px;
+	border-left: 8px solid #222;
+	border-right: 8px solid #222;
+	margin-right: 5px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	gap: 20px;
+}
+
+.pagination button {
+	padding: 10px 20px;
+	margin: 0 5px;
+	background-color: #e3e3e3;
+	color: #222;
+	border: none;
+	cursor: pointer;
+}
+
+.pagination button:disabled {
+	background-color: #222;
+	cursor: not-allowed;
+}
+
+.item {
+	margin-bottom: 20px;
+	border: 1px solid #222;
+	padding: 10px;
+}
+
+.pagination #pageInfo {
+	color: #e3e3e3;
+}

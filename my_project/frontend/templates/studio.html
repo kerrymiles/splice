@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Studio | Splice</title>
+	<link rel="stylesheet" href="{{ url_for('static', path='/css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', path='/css/header-style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', path='/css/footer-style.css') }}">
+	<link rel="shortcut icon" href="{{ url_for('static', path='/assets/img/favicon.ico') }}" type="image/x-icon">
+	<link rel="stylesheet" href="{{ url_for('static', path='/css/gr-studio.css') }}">
+	<script src="{{ url_for('static', path='/dist/studio.js') }}"></script>
+
+	<style>
+		@font-face {
+			font-family: 'Manrope-SemiBold';
+			src: url("{{ url_for('static', path='/fonts/Manrope-SemiBold.ttf') }}");
+		}
+
+		@font-face {
+			font-family: 'Manrope';
+			src: url("{{ url_for('static', path='/fonts/Manrope-Regular.ttf') }}"); 
+		}
+
+		@font-face {
+			font-family: 'Manrope-Bold';
+			src: url("{{ url_for('static', path='/fonts/Manrope-Bold.ttf') }}");
+		}
+
+		.use-sample-library {    
+			background-image: url("{{ url_for('static', path='/assets/img/main/bg_main-top.jpg') }}");
+			background-size: cover;
+			height: calc(100vh - 75px);
+		}
+
+		.try-spline__final-slide {
+			background-image: url("{{ url_for('static', path='/assets/img/main/try-splice-today.jpg') }}");
+			background-size: cover;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header_container">
+			<div id="left" class="header_navigation">
+				<div class="logo">
+					<a href="{{ url_for('render', name='index') }}">
+						<img src="{{ url_for('static', path='/assets/img/logo_img.svg') }}" alt="Splice">
+					</a>
+				</div>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='sounds') }}">
+								Sounds
+							</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='studio') }}">Studio</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='about') }}">About</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='pricing') }}">Pricing</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link header__nav-hover" href="{{ url_for('render', name='contactus') }}">Contact Us</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="right" class="header_registration">
+				<ul class="reg">
+					<li class="reg__item login">
+						<a href="#" class="reg__btn login-font">Login</a>
+					</li>
+					<li class="reg__item sign-block">
+						<a href="#" class="reg__btn sign-font">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<hr style="margin-top: 25px;">
+
+	<main class="main__container">
+		<section class="introduction">
+			<h1 class="title-introduction">
+				Studio
+			</h1>
+			<p class="paragraph-introduction">
+				Our studio is the largest in <span class="scottish-text">Scotland.</span></br>
+				We record songs for world-renowned labels and rappers. </br>
+				We have three offices: in <span class="city_office">Glasgow</span>, in <span class="city_office">Edinburgh</span> and in <span class="city_office">New York</span>.
+			</p>
+		</section>
+		<section class="howtoget-there">
+			<h1 class="info-title">
+				How to get there?
+			</h1>
+			<div class="choose-office">
+				<div class="df gl">
+					<button class="baton">Glasgo, Scotland </br> 
+						<span class="address-style">Address: 489 Pollokshaws Rd, Glasgow G41 2PF, Great Britian</span> </button>
+
+				</div>
+				<div class="df ed">
+					<button class="baton">Edinburgh, Scotland </br>
+						<span class="address-style">Address: 19 Damside, Edinburgh EH4 3BB, Great Britian</span></button>
+
+				</div>
+				<div class="df ny" href="#">
+					<button class="baton">New-York, USA </br> 
+						<span class="address-style">Address: 18 Macormac Pl, Staten Island, NY 10303, USA</span></button>
+
+				</div>
+			</div>
+
+
+		</section>
+		<section class="map_list">
+			<div class="maps glasgo gl active">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3a72f1dd5ae33e3316bedb6a758cb2f0ef2aa598555e0510904724d59476cefe&amp;width=800&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+			<div class="maps edin ed">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A015f0a600c710c5f20062decc4e5ff87700f94f1e1560b3c0d89bbf40f7ccb5f&amp;width=800&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>			
+			</div>
+			<div class="maps newyork ny">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A478142a891bea06ce34d3fb8a956c9a5c2c7f2973b66a3aa80d1a229490fdedc&amp;width=800&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+			</div>
+		</section>
+	</main>
+
+	<hr style="margin-top: 30px;margin-bottom: 30px;">
+	<footer>
+		<section class="my_up_divisors">
+			<hr class="divider" style="margin-top: 0px;">
+			<hr class="divider" style="height: 2px;">
+			<hr class="divider" style="height: 3px;">
+			<hr class="divider" style="height: 5px;">
+			<hr class="divider" style="height: 7px;">
+			<hr class="divider" style="height: 9px;">
+			<hr class="divider" style="height: 12px;">
+			<hr class="divider" style="height: 14px;">
+			<hr class="divider" style="height: 17px;">
+			<hr class="divider" style="height: 21px;">
+			<hr class="divider" style="height: 24px;">
+			<hr class="divider" style="height: 26px;">
+		</section>
+		<section class="middle-panel">
+			<section class="left-divisors">
+				<hr class="extern_divider" style="margin-top: 0px;">
+				<hr class="extern_divider" style="height: 2px;">
+				<hr class="extern_divider" style="height: 3px;">
+				<hr class="extern_divider" style="height: 5px;">
+				<hr class="extern_divider" style="height: 7px;">
+				<hr class="extern_divider" style="height: 9px;">
+				<hr class="extern_divider" style="height: 12px;">
+				<hr class="extern_divider" style="height: 14px;">
+				<hr class="extern_divider" style="height: 17px;">
+				<hr class="extern_divider" style="height: 21px;">
+				<hr class="extern_divider" style="height: 24px;">
+				<hr class="extern_divider" style="height: 26px;">
+			</section>
+			<section class="footer__navbar-menu community__footer">
+				<section class="footer-navbar">
+					<h2 class="headline__footer-name __title_section">Community</h2>
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item mt15"><a href="#" class="footer-ref footer__hover-nav">Ableton Live Projects</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">FL Studio Projects</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Logic Pro X Projects</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Garageband Projects</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Remix Contests</a></li>
+					</ul>
+				</section>
+			</section>
+			<section class="footer__navbar-menu sounds__footer">
+				<section class="footer-navbar">
+					<h2 class="headline__footer-name __title_section">Sounds</h2>
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item mt15"><a href="#" class="footer-ref footer__hover-nav">Features</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Catalog</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">How Jauz Uses Sounds</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">deadmau5's Chimaera</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">KSHMR Vol. 2</a></li>
+					</ul>
+				</section>
+			</section>
+			<section class="footer__navbar-menu plugins__footer">
+				<section class="footer-navbar">
+					<h2 class="headline__footer-name __title_section">Plugins</h2>
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item mt15"><a href="#" class="footer-ref footer__hover-nav">Top VSTs</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Serum</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Rent to Own</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Free Plugins</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Top Manufacturers</a></li>
+					</ul>
+				</section>
+			</section>
+			<section class="footer__navbar-menu beatmaker__footer">
+				<h2 class="headline__footer-name __title_section">Beatmaker</h2>
+				<section class="footer-navbar">
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item mt15"><a href="#" class="footer-ref footer__hover-nav">Create Your Beat</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Wakapella</a></li>
+						<li class="nav-footer__item"><a href="#" class="footer-ref footer__hover-nav">Just Blaze</a></li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</footer>
+</body>
+</html>
